@@ -1,0 +1,30 @@
+// firstName, lastName, avatar, campus, devLanguage
+export const students = [
+    {
+        id:1,
+        firstName:"Brendan",
+        lastName:"Viale",
+        avatar:"./ri7.png",
+        campus:"Ri7",
+        devLanguage:"PHP",
+        isFromRi7:true
+    },
+    {
+        id:2,
+        firstName:"Yolo",
+        lastName:"Swag",
+        avatar:"./ri7.png",
+        campus:"Ri8",
+        devLanguage:"Go",
+        isFromRi7:false
+    },
+    {
+        id:3,
+        firstName:"Yulu",
+        lastName:"Swug",
+        avatar:"./ri7.png",
+        campus:"Ri7",
+        devLanguage:"Js",
+        isFromRi7:true
+    },
+]
