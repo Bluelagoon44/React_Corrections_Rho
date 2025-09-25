@@ -11,7 +11,7 @@ const Movies = ({movies}) => {
                 return result.json()   }
             setError(result.statusText)
         })
-        .catch((moviesResult)=>{
+        .then((moviesResult)=>{
             setMoviesList(moviesResult.results)
         })
     }, [])
