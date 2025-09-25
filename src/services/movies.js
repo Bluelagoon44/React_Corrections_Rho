@@ -1,0 +1,3 @@
+export const popularMovies = async()=>{
+    return await fetch("https://api.themoviedb.org/3/movie/popular?api_key=942793ac262d56a416455b75eba35928");
+}
