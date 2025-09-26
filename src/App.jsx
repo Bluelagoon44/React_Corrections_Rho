@@ -1,11 +1,11 @@
 import './App.css'
 import { BrowserRouter } from "react-router-dom"
-import TD10 from "./TD10/TD10"
+import TD11 from './TD11/TD11'
 
 function App() {
   return (
     <BrowserRouter>
-      <TD10 />
+      <TD11 />
     </BrowserRouter>
   )
 }

@@ -25,7 +25,7 @@ const Login = () => {
                 })
                 .then((tokenResult)=>{
                     sessionStorage.setItem("token",tokenResult.request_token)
-                    navigate("/yolo")                 
+                    navigate("/")                 
                 })
                 return;
             }
