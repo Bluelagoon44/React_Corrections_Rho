@@ -1,8 +1,9 @@
-import { useState } from "react"
+import { useState, useContext } from "react"
 import Form from "../TD6/Form"
 import { login, users } from "../utils/login"
 import { getToken } from "../services/login"
 import { useNavigate } from "react-router-dom"
+import { globalContext } from "../TD12/store.js"
 
 const Login = () => {
   const [loginData, setLoginData] = useState({
@@ -34,7 +35,7 @@ const Login = () => {
             }
         })
     }
-
+    
     return (
         <div>
             <Form inputs={login} state={loginData} setState={setLoginData} submit={handleSubmit}/>

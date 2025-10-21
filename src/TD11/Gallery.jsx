@@ -1,7 +1,8 @@
-import { useEffect, useState } from "react"
+import { useContext, useEffect, useState } from "react"
 import { jupiterImages } from "../services/nasa"
 import Image from "./Image"
 import { Link } from "react-router-dom"
+import { globalContext } from "../TD12/store"
 
 const Gallery = () => {
     const [images, setImages] = useState([])
@@ -20,8 +21,13 @@ const Gallery = () => {
         getJupiter()
     }, [])
 
+    const {store} = useContext(globalContext)
+
     return (
         <div>
+            <h1 class={store.theme}>
+                {store.lang === "fr" ? "Bienvenue" : "Welcome"}
+            </h1>
             {error ? <p>{error}</p>
             :
                 images.length > 0 ?
