@@ -1,14 +1,14 @@
 import './App.css'
 import { BrowserRouter } from "react-router-dom"
 import ContextProvider from './TD12/ContextProvider'
-import Header from './TD12/Header'
-import TD14 from './TD14/TD14'
+import TD15 from './TD15/TD15'
+import Register from './TD15_bis/Register'
 
 function App() {
   return (
     <BrowserRouter>
       <ContextProvider>
-        <TD14 />
+        <Register />
       </ContextProvider>
     </BrowserRouter>
   )

@@ -1,11 +1,13 @@
 export const register = [
     {
+        id:1,
         name:"genre",
         type:"radio",
         defaultValue:"H",
         values:["H","F"]
     },
     {
+        id:2,
         name:"firstName",
         type:"text",
         defaultValue:"",
@@ -13,6 +15,7 @@ export const register = [
         placeholder:"Prénom"
     },
     {
+        id:3,
         name:"lastName",
         type:"text",
         defaultValue:"",
@@ -20,6 +23,7 @@ export const register = [
         placeholder:"Nom"
     },
     {
+        id:4,
         name:"mail",
         type:"email",
         defaultValue:"",
@@ -27,12 +31,14 @@ export const register = [
         placeholder:"Mail"
     },
     {
+        id:5,
         name:"birthday",
         type:"date",
         defaultValue:"",
         regex:""
     },
     {
+        id:6,
         name:"zipCode",
         type:"text",
         defaultValue:"",
@@ -40,6 +46,7 @@ export const register = [
         placeholder:"Code postal"
     },
     {
+        id:7,
         name:"city",
         type:"text",
         defaultValue:"",
